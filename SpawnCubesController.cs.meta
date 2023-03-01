@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a2a246566e885b04b8782ea7a46d3c42
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ScriptCube: {fileID: 9077166799559134537, guid: fca33a93b4c82db47accb68d1c7abd52,
+      type: 3}
+  - Platform: {instanceID: 0}
+  - cam: {instanceID: 0}
+  - Timer: {fileID: 4637817481464803741, guid: 1fe717ad9b3d9754c958461bf8243f6f, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

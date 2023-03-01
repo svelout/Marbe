@@ -11,7 +11,7 @@ public class LoadBestScore : MonoBehaviour
         if (Directory.Exists(Application.dataPath + "/GameData/") != true) Directory.CreateDirectory(Application.dataPath + "/GameData/");
         if (File.Exists(GameValues.record_file) != true)
         {
-            Debug.Log("Файл найден!");
+            Debug.Log("Файл создан!");
             SaveRecord.WriteValueRecordFile(0, GameValues.record_file);
         }
         Debug.Log("Файл найден!");

@@ -17,6 +17,8 @@ public class CubeTransform : MonoBehaviour
     public TextMeshProUGUI text2;
     public TextMeshProUGUI text3;
     public bool lose_animate_end;
+    public AudioSource LoseSound;
+    public AudioSource gm;
 
     void Start()
     {
@@ -73,7 +75,12 @@ public class CubeTransform : MonoBehaviour
             else
             {
                 var gc = new GameController();
+                if (gm.isPlaying != false)
+                {
+                    gm.Stop();
+                }
                 gc.Stop(gameObject, text, text2, text3, true);
+                LoseSound.Play();
                 lose_animate_end = true;
             }
         }

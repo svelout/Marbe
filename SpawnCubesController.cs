@@ -31,6 +31,7 @@ public class SpawnCubes : MonoBehaviour
     public int global_record;
     public bool IsRecordAdd;
     public bool record_write;
+    public AudioSource gm;
     // 7.13
     // 21.53
 
@@ -104,6 +105,10 @@ public class SpawnCubes : MonoBehaviour
             if (NewRecordText.fontMaterial.GetFloat(ShaderUtilities.ID_FaceDilate) != -1f)
             {
                 NewRecordText.fontMaterial.SetFloat(ShaderUtilities.ID_FaceDilate, -1f);
+            }
+            if (GameValues.GameMusic != false && gm.isPlaying != true)
+            {
+                gm.Play();
             }
             timer.Enabled = false;
             var r = Random.Range(1, 10);

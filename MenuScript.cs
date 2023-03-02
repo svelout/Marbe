@@ -14,6 +14,11 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void GoToSkinsButton()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - SceneManager.GetActiveScene().buildIndex + 3);
+    }
+
     public void GameExit()
     {
         Application.Quit();
